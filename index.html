@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web ESP32</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Module/stylesheets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Site Web ESP32</h1>
+        </div>
+        <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Rechercher un mot-clé...">
+                <button onclick="searchKeyword()">Rechercher</button>
+            </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Ouvrir le menu de navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="intro-section">
+            <h1>Bienvenue sur le site ESP32</h1>
+            <div class="call-to-action">
+                <a href="./index.html" class="button primary-button">Accueil</a>
+            </div>
+        </section>
+    </main>
+     <h1>Contrôle LED ESP32</h1>
+<section class="intro-section">
+    <button id="connect">🔗 Connecter ESP32</button>
+  </section>
+
+<section class="intro-section">
+    <button id="on">💡 Allumer LED</button>
+  </section>
+<section class="intro-section">
+    <button id="off">❌ Éteindre LED</button>
+  </section>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-section about-us">
+                <h3>À Propos de Nous</h3>
+                <p>Ce projet a pour but de présenter les ponts diviseur de tension et de proposer un convertisseur et un simulateur</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./HTML/Calculateur.html">Le Convertisseur</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact</h3>
+                <p>Des questions ou suggestions? Contactez-nous à: <a href="mailto:contact@audeladumonde.com">julienda.david0210@gmail.com</a></p>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <details class="glossaire">
+                <summary>Glossaire</summary>
+                <div class="glossaire-content">
+            </details>
+            <p class="copyright">&copy; 2025 Projet Calculateur sinusoïdal. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="./Module/script.js"></script>
+</body>
+</html>

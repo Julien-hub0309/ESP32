@@ -1,0 +1,212 @@
+/* ================================================= */
+/* 1. DÉFINITIONS GLOBALES ET TYPOGRAPHIE ÉLECTRIQUE */
+/* ================================================= */
+
+:root {
+    /* Couleurs de base Cyberpunk */
+    --color-bg: #0a0a0f;              /* Noir bleuté profond */
+    --color-dark-surface: #1a1a2e;    /* Surface sombre légèrement violette */
+    --color-text: #cfcfe6;            /* Texte gris clair bleuté */
+
+    /* Couleurs Néon Électriques */
+    --color-primary: #00f5ff;         /* Cyan néon (connectivité) */
+    --color-secondary: #ff00ff;       /* Magenta néon (accent cyberpunk) */
+    --color-error: #ff003c;           /* Rouge vif (alerte) */
+
+    /* Police Futuriste */
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* Réinitialisation */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.8; /* plus respirant */
+    padding: 20px;    /* espace global */
+}
+
+/* ================================================= */
+/* 2. EN-TÊTE ET NAVIGATION                          */
+/* ================================================= */
+
+.main-header {
+    background-color: var(--color-dark-surface);
+    border-bottom: 2px solid var(--color-primary);
+    padding: 20px 8%; /* plus d’air */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* espace augmenté */
+    margin-bottom: 20px;
+}
+
+.logo-link .logo {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 0 5px var(--color-primary));
+}
+
+.main-header h1 {
+    color: var(--color-primary);
+    font-size: 2em;
+    text-shadow: 0 0 5px var(--color-primary);
+    text-transform: uppercase;
+}
+
+.site-slogan {
+    font-size: 1em;
+    color: var(--color-secondary);
+}
+
+/* Navigation */
+.main-nav {
+    border-top: 1px dashed var(--color-text);
+    padding-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* espace entre liens */
+}
+
+.nav-list li a {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 12px 20px; /* plus grand */
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px; /* arrondi */
+}
+
+.nav-list li a:hover {
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* ================================================= */
+/* 3. CONTENU PRINCIPAL                              */
+/* ================================================= */
+
+.main-content {
+    padding: 60px 8%; /* plus d’air */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-section h1.page-title, .intro-section h1 {
+    color: var(--color-primary);
+    font-size: 2.8em;
+    text-shadow: 0 0 10px var(--color-primary);
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-text);
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+}
+
+/* ================================================= */
+/* 4. CARTES DE CONTENU                              */
+/* ================================================= */
+
+.content-cards {
+    display: flex;
+    gap: 40px; /* plus d’espace */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 320px;
+    background-color: var(--color-dark-surface);
+    border: 1px solid var(--color-text);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px; /* arrondi doux */
+    margin: 20px; /* espace autour */
+    padding: 25px; /* contenu plus aéré */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* ================================================= */
+/* 5. CONVERTISSEUR                                  */
+/* ================================================= */
+
+.converter-box {
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 600px;
+    background-color: var(--color-dark-surface);
+    border: 2px solid var(--color-primary); 
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    border-radius: 12px;
+}
+
+/* ================================================= */
+/* 6. PIED DE PAGE                                   */
+/* ================================================= */
+
+.main-footer {
+    background-color: var(--color-dark-surface);
+    padding: 40px 8%;
+    border-top: 3px dashed var(--color-secondary);
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* plus d’air */
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    padding: 10px;
+}
+
